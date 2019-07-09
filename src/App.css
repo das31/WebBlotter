@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.ReactTable .rt-tr .action{
+  transition: all .900s ease;
+  color: red;
+  transform:scale(0);
+}
+
+
+.ReactTable .rt-tr:hover .action{
+  transform: scale(1.3);
+}
+
+.ReactTable .rt-tr:hover  .rt-td{
+  background: rgb(72, 194, 163) ;
+  transition: all 1.3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.React ,rt-th, .ReactTable .rt-td {
+  overflow: hidden;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc{
+  box-shadow: none !important;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc::before {
+  content:"\2191";
+  position: absolute;
+  right: 5px;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc {
+  box-shadow: none !important;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc::before {
+  content: "\2193";
+  position: absolute;
+  right: 5px;
+}
+
+.headerDivider {
+  border-left : 1px solid #38546d;
+  border-right : 1px solid #16222c;
+  height: 80px;
+  position: absolute;
+  right: 230px;
+  top:400px;
+}
+
+.ag-header-cell-label {
+  justify-content: center;
+}
+
+.rt-tr-group {
+  max-height: 39px
+}
+
+ html,body {
+   width:100%;
+   height:100%;
+ }
+
+ .MuiInput-underline:before{
+   border-bottom: 1px solid #a8a8a8 !important
+ }
+
+ .MuiSvgIcon-root {
+   color: #a8a8a8
+ }
+
+.container{display:flex;flex-direction:row;}
